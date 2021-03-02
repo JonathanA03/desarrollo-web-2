@@ -12,7 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/*route:: get ('/', function() {
+    return "Bienvenido";
+}):*/
 
-Route::get('saludo/{nombre?}', function ($nombre = "Apple") {
+
+/*Route::get('saludo/{nombre?}', function ($nombre = "Apple") {
     return "Hola ".$nombre;
-});
+});*/
+
+/*Route::get('/', function (){
+    $nombre = "Jonathan";
+    return view('home', compact('nombre'));
+})*/
+    
