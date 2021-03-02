@@ -16,13 +16,23 @@ use Illuminate\Support\Facades\Route;
     return "Bienvenido";
 }):*/
 
-
-/*Route::get('saludo/{nombre?}', function ($nombre = "Apple") {
+/*
+Route::get('saludo/{nombre?}', function ($nombre = "Invitado") {
     return "Hola ".$nombre;
-});*/
+});
+*/
+Route:: get ('/contacto', function(){
+    return "Seccion de Contactos";
+})->name('Contacto');
+
+route :: get ('/', function () {
+    echo "<a href = 'contacto'>Contacto 1</a><br>";
+    echo "<a href = 'contacto'>Contacto 2</a><br>";
+    echo "<a href = 'contacto'>Contacto 3</a><br>";
+})
 
 /*Route::get('/', function (){
     $nombre = "Jonathan";
     return view('home', compact('nombre'));
-})*/
+})->name('home');*/
     
